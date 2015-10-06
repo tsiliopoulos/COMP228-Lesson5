@@ -6,6 +6,39 @@ public class Person {
 		private float _heightInInches;
 		private float _massInPounds;
 		
+		// GETTERS AND SETTERS (PROPERTIES)
+		public int getAge() {
+			return this._age;
+		}
+
+		public void setAge(int age) {
+			this._age = age;
+		}
+
+		public String getName() {
+			return this._name;
+		}
+
+		public void setName(String name) {
+			this._name = name;
+		}
+
+		public float getHeightInInches() {
+			return this._heightInInches;
+		}
+
+		public void setHeightInInches(float heightInInches) {
+			this._heightInInches = heightInInches;
+		}
+
+		public float getMassInPounds() {
+			return this._massInPounds;
+		}
+
+		public void setMassInPounds(float massInPounds) {
+			this._massInPounds = massInPounds;
+		}
+
 		// CONSTRUCTOR(S) ++++++++++++++++++++++++++++
 		Person(String name, int age, float heightInInches, float massInPounds) {
 			this._name = name;
