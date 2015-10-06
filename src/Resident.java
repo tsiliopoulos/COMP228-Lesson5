@@ -14,7 +14,12 @@ public class Resident extends Person {
 	}
 	
 	public String getAddress() {
-		return this._address.toString();
+		try {
+			return this._address.toString();
+		} catch (Exception e) {
+			return "Error: Address not initialized";
+		}
+		
 	}
 	
 	// CONSTRUCTOR ++++++++++++++++++++++++++++++++++++++++++++++++++++
