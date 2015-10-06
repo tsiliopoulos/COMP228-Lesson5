@@ -1,8 +1,8 @@
 // RESIDENT SUB CLASS OF THE PERSON SUPERCLASS
 public class Resident extends Person {
 	//PRIVATE INSTANCE VARIABLES
-	private String _SIN;
-	private Address _address;
+	protected String _SIN;
+	protected Address _address;
 	
 	//GETTERS AND SETTERS
 	public String getSIN() {
@@ -11,6 +11,10 @@ public class Resident extends Person {
 	
 	public void setAddress(String streetNumber, String streetName, String cityName, String provinceName){
 		this._address = new Address(streetNumber, streetName, cityName, provinceName);
+	}
+	
+	public void changeAddress(String streetNumber, String streetName, String cityName, String provinceName){
+		this._address.change(streetNumber, streetName, cityName, provinceName);
 	}
 	
 	public String getAddress() {

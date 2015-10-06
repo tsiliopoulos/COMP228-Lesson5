@@ -7,7 +7,11 @@ public class Program {
 		
 		resident.eats();
 		resident.setAddress("55", "Fifty-Fifth Street", "Toronto", "Ontario");
+		System.out.println("\n");
+		System.out.println(resident.getAddress());
 		
+		resident.changeAddress("44", "Fourty-Fourth Street", "Toronto", "Ontario");
+		System.out.println("\n");
 		System.out.println(resident.getAddress());
 	}
 
