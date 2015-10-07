@@ -16,8 +16,9 @@ public class Program {
 		
 		student.addCourse("COMP101", "Programming Fundamentals", "First Computer Course", 600.35);
 		student.addCourse("COMP102", "Programming Design", "First UML Course", 600.35);
-		student.dropCourse("Programming Design");
-		student.dropCourse("Programming Fundamentals");
+		//student.dropCourse("Programming Design");
+		//student.dropCourse("Programming Fundamentals");
+		student.dropCourse("Programming");
 		System.out.println(student.toString());
 	}
 

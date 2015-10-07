@@ -1,9 +1,10 @@
 import java.util.ArrayList;
 
 // STUDENT CLASS
-public class Student extends Resident {
+public class Student extends Resident implements SchoolID {
 	// PRIVATE INSTANCE VARIABLES
 	private String _studentID;
+	private String _schoolID;
 	private ArrayList<Course> _courses=new ArrayList<Course>();
 	
 	// CONSTRUCTOR
@@ -33,6 +34,7 @@ public class Student extends Resident {
 
 	@Override
 	public String toString() {
+
 		String output = "";
 		 output += "Student Name: " + this._name + " StudentID: " + this._studentID + "\n";
 		 
@@ -49,6 +51,14 @@ public class Student extends Resident {
 		 
 		 return output;
 	}
+
+	@Override
+	public void addSchool(String schoolName) {
+		this._schoolID = schoolName;
+		
+	}
+
+
 	
 	
 

@@ -1,5 +1,5 @@
 // RESIDENT SUB CLASS OF THE PERSON SUPERCLASS
-public class Resident extends Person {
+public abstract class Resident extends Person {
 	//PRIVATE INSTANCE VARIABLES
 	protected String _SIN;
 	protected Address _address;
